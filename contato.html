@@ -5,98 +5,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/img/logo-caveira.jpg" type="image/icon type">
-    <title>DY Games - Contato</title>
+    <link rel="icon" href="assets/img/DY - Logo icone.png" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <title>DY Games</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="./assets/img/logo-dygames2.png" alt="Logo DY Games"></a>
-        <nav>
-            <ul>
-                <li><a href="produtos.html">Games</a></li>
-                <li><a href="">Meus Pedidos</a></li>
-                <li><a href="">Cadastro</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/DY - Logo animado.gif" alt="Logo DY Games">
+            </a>
+        </div>
+        <div class="pesquisa">
+            <input type="search" name="search" id="search" placeholder="Qual jogo está procurando?">
+            <button type="submit" class="botao-pesquisa"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href=""><i class="fas fa-wallet"></i>Meus Pedidos</a></li>
+                    <li><a href=""><i class="fas fa-user-circle"></i>Cadastro/Login</a></li>
+                    <li><a href="contato.html"><i class="fas fa-envelope"></i>Contato</a></li>
+                    <li><a href="aboutus.html"><i class="fas fa-briefcase"></i>Sobre nós</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="contact">
             <form action="">
                 <label for="name">Nome Completo</label>
                 <input type="text" name="name" id="name" placeholder="Nome e Sobrenome">
                 <label for="whatsapp">WhatsApp</label>
-                <input type="text" name="whatsapp" id="whatsapp">
+                <input type="text" name="whatsapp" id="whatsapp" placeholder="(XX)_____-____">
                 <label for="email">Seu email</label>
                 <input type="email" name="email" id="email" placeholder="seunome@dygames.com">
-                <label for="estados">Selecione seu Estado</label>
-                <select name="estados-brasil" id="estados">
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP" selected>São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
-                </select>
-                <label for="estados">Selecione sua Cidade</label>
-                <select name="cidades-brasil" id="cidades">
-                    <option value="bragancapaulista">Bragança Paulista/SP</option>
-                    <option value="antoniocarlos">Antonio Carlos/SC</option>
-                    <option value="belohorizonte">Belo Horizonte/MG</option>
-                    <option value="campinas">Campinas/SP</option>
-                    <option value="guarulhos">Guarulhos/SP</option>
-                    <option value="fortaleza">Fortaleza/CE</option>
-                    <option value="recipe">Recife/PE</option>
-                    <option value="eldoradodosul">Eldorado do Sul/RS</option>
-                    <option value="salvador">Salvador/BA</option>
-                    <option value="jacarei">Jacareí/SP</option>
-                    <option value="portoalegre">Porto Alegre/RS</option>
-                    <option value="pojuca">Pojuca/BA</option>
-                    <option value="vilavelha">Vila Velha/ES</option>
-                    <option value="curitiba">Curitiba/PR</option>
-                    <option value="americana">Americana/SP</option>
-                    <option value="riodejaneiro">Rio de Janeiro/RJ</option>
-                    <option value="sorocaba">Sorocaba/SP</option>
-                    <option value="piracicaba">Piracicaba/SP</option>
-                    <option value="saopaulo">São Paulo/SP</option>
-                    <option value="joaopessoa">João Pessoa/PB</option>
-                    <option value="buerarema">Buerarema/BA</option>
-                    <option value="limoeiro">Limoeiro/PE</option>
-                </select>
+                <div class="estado-cidade">
+                    <div class="estados">
+                        <label for="estados">Selecione seu Estado</label>
+                        <select name="estados-brasil" id="estados">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP" selected>São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <div class="cidades">
+                        <label for="estados">Selecione sua Cidade</label>
+                        <select name="cidades-brasil" id="cidades">
+                            <option value="bragancapaulista">Bragança Paulista/SP</option>
+                            <option value="antoniocarlos">Antonio Carlos/SC</option>
+                            <option value="belohorizonte">Belo Horizonte/MG</option>
+                            <option value="campinas">Campinas/SP</option>
+                            <option value="guarulhos">Guarulhos/SP</option>
+                            <option value="fortaleza">Fortaleza/CE</option>
+                            <option value="recipe">Recife/PE</option>
+                            <option value="eldoradodosul">Eldorado do Sul/RS</option>
+                            <option value="salvador">Salvador/BA</option>
+                            <option value="jacarei">Jacareí/SP</option>
+                            <option value="portoalegre">Porto Alegre/RS</option>
+                            <option value="pojuca">Pojuca/BA</option>
+                            <option value="vilavelha">Vila Velha/ES</option>
+                            <option value="curitiba">Curitiba/PR</option>
+                            <option value="americana">Americana/SP</option>
+                            <option value="riodejaneiro">Rio de Janeiro/RJ</option>
+                            <option value="sorocaba">Sorocaba/SP</option>
+                            <option value="piracicaba">Piracicaba/SP</option>
+                            <option value="saopaulo">São Paulo/SP</option>
+                            <option value="joaopessoa">João Pessoa/PB</option>
+                            <option value="buerarema">Buerarema/BA</option>
+                            <option value="limoeiro">Limoeiro/PE</option>
+                        </select>
+                    </div>
+                </div>
                 <label for="assunto">Qual motivo do contato</label>
-                <label for="entrega">Entrega</label>
-                <input type="radio" name="assunto" id="entrega">
-                <label for="devolucao">Devolução</label>
-                <input type="radio" name="assunto" id="devolucao">
-                <label for="pagamento">Pagamento</label>
-                <input type="radio" name="assunto" id="pagamento">
+                <div class="reason">
+                    <div class="reasondelivery">
+                        <input type="radio" name="assunto" id="entrega">
+                        <label for="entrega">Entrega</label>
+                    </div>
+                    <div class="reasonreturn">
+                        <input type="radio" name="assunto" id="devolucao">
+                        <label for="devolucao">Devolução</label>
+                    </div>
+                    <div class="reasonpayment">
+                        <input type="radio" name="assunto" id="pagamento">
+                        <label for="pagamento">Pagamento</label>
+                    </div>
+                </div>
                 <label for="descricao">Digite a descrição</label>
-                <textarea name="descricao" id="descricao" cols="30" rows="10"
+                <textarea name="descricao" id="descricao" cols="50" rows="10"
                     placeholder="Digite aqui a descrição do assunto"></textarea>
-                <input type="reset" value="Limpar">
-                <input type="submit" value="Enviar">
+                <div class="submit-and-reset">
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </div>
             </form>
         </section>
+        <footer>
+            <h3>Página desenvolvida por Danyllo Pires como projeto para formação do curso Web Full Stack da SoulCode
+                Academy
+            </h3>
+            <h4>Agradecimento especial para Eduardo Franco pela colaboração no logo da empresa</h4>
+            <h4>Agradecimento especial para <a href="https://www.instagram.com/paulopagnardi/">Paulo Pagnardi</a> pela
+                colaboração no logo no browser da empresa</h4>
+        </footer>
+        <script src="https://kit.fontawesome.com/e7381d0be6.js" crossorigin="anonymous"></script>
     </main>

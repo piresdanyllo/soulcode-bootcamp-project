@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* CSS Header */
+
+header {
+    display: flex;
+    height: 250px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    border-bottom: 1px solid #000;
+}
+
+.logo {
+    height: 250px;
+    border-bottom: 1px solid #000;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    margin-left: 50px;
+    color: #000000;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-wallet,
+.fa-user-circle,
+.fa-envelope,
+.fa-briefcase {
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.fa-search {
+    font-size: 1rem;
+}
+
+.pesquisa {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+
+#search {
+    width: 80%;
+    height: 35px;
+    padding: 10px;
+}
+
+.botao-pesquisa {
+    width: 70px;
+    padding: 5px;
+    height: 35px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #000;
+    border-left: none;
+}
+
+/* CSS Main Games */
+
+.deliverytime {
+    display: flex;
+    text-align: center;
+    background-color: rgb(30, 212, 194);
+    width: 100%;
+    height: 50px;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    ;
+}
+
+.deliverytime span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.banners {
+    width: 100%;
+    height: 640px;
+}
+
+.bannergames {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/valorant-cast-2-1622827440029.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bannergames {
+    color: #fff;
+    font-size: 2rem;
+    padding-bottom: 40px;
+    font-weight: bold;
+}
+
+.panelgames {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panelgames h4 {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.steam,
+.blizzard,
+.origin,
+.riot,
+.moregames {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.steam:hover,
+.blizzard:hover,
+.origin:hover,
+.riot:hover,
+.moregames:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.steam img {
+    padding: 15px 10px;
+}
+
+.blizzard img {
+    padding: 60px 10px;
+}
+
+.origin img {
+    padding: 60px 10px;
+}
+
+.riot img {
+    padding: 40px 10px;
+}
+
+.moregames img {
+    padding: 30px 20px;
+}
+
+.steam img,
+.blizzard img,
+.origin img,
+.riot img,
+.moregames img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid rgb(30, 212, 194);
+    border-radius: 20px;
+
+}
+
+/* CSS Form Contact */
+
+.contact {
+    width: 100%;
+    height: 650px;
+    margin-top: 50px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name,
+#whatsapp,
+#email,
+textarea,
+.reason {
+    width: 310px;
+    padding: 5px;
+    margin-top: 5px;
+
+}
+
+#name,
+#whatsapp,
+#email {
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+
+textarea {
+    padding: 10px;
+    display: inline-block;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 1px solid rgb(30, 212, 194);
+    outline: none !important;
+}
+
+.contact form input,
+.contact form select,
+.contact form textarea {
+    margin-bottom: 15px;
+}
+
+.reason {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reasondelivery,
+.reasonreturn {
+    margin-right: 30px;
+}
+
+.estado-cidade {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+}
+
+.submit-and-reset input {
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#estados,
+#cidades {
+    width: 171px;
+}
+
+/* CSS About Us */
+
+.aboutus {
+    margin: auto;
+    max-width: 500px;
+    height: 507px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    background-color: rgb(30, 212, 194);
+    color: #000;
+}
+
+footer h3,
+footer h4 {
+    margin-bottom: 15px;
+}
+
+footer h4:last-of-type {
+    margin-bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
