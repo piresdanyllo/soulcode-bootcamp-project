@@ -228,7 +228,7 @@ header {
 .contact {
     width: 100%;
     height: 650px;
-    margin-top: 50px;
+    border-top: 1px solid #000;
 }
 
 .contact form {
@@ -236,6 +236,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 #name,
@@ -309,18 +310,19 @@ textarea:focus {
     height: 100%;
     border-top: 1px solid #000;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mission-value-vision {
-    margin: auto;
     max-width: 500px;
     height: 507px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-evenly;
     text-align: center;
     font-size: 1.6rem;
+    margin-left: 50px;
 }
 
 /* Footer */
@@ -566,6 +568,14 @@ footer {
         width: 80%;
     }
 
+    .mission-value-vision {
+        margin-left: 0
+    }
+
+    .mission-vision-value-img {
+        display: none;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -638,6 +648,12 @@ footer {
         align-items: center;
     }
 
+    .socialmedias a img {
+        width: 100%;
+        height: 25px;
+        margin-bottom: 15px;
+    }
+
     .paymentsmethods {
         height: 100%;
     }
@@ -654,7 +670,7 @@ footer {
         width: 70%;
         justify-content: center;
         align-items: center;
-        height: 15vh;
+        height: 20vh;
     }
 
     .copyrightandthanks h3,
